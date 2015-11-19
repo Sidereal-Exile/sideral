@@ -1,10 +1,11 @@
-<!DOCTYPE html>
-<html>
-	<body>
-	
+{% extends "SideralPublicBundle::layout.html.twig" %}
+
+{% block title %} Accueil - {{ parent() }} {% endblock %}
+
+{% block content %}
+
 		<h1>Bienvenue sur l'<strong>Exil Sidéral !</strong></h1>
 
 		<p class="p_oblique_1">Dans ce jeu de survie dans l’espace, vous vous retrouverez à la tête d’un <em>vaisseau spatial esseulé dans le vide cosmique</em>. <br> Votre rôle sera de <em>mener son équipage</em> à un sort plus enviable que ce qu’a subi la majeure partie de l’humanité, dont il ne reste que quelques rescapés, dispersés dans une poignée d’astronefs isolés...</p>
 
-	</body>
-</html>
+{% endblock %}

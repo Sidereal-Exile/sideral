@@ -1,0 +1,32 @@
+{% extends "::base.html.twig" %}
+
+{% block body %}
+
+	{% block header %}
+	<header>
+	        <nav>
+	            <ul>
+	                <li><a href="{{ path('_sideral_public_accueil') }}">Accueil</a></li>
+	                <li><a href="{{ path('_sideral_public_ressources') }}">Manuel du commandant</a></li>
+	                {# <li><a href="{{ path('_sideral_game_accueil') }}">Jeu</a></li> #}
+	            </ul>
+	        </nav>
+	</header>
+	{% endblock %}
+
+
+	{% block content %}
+
+	{% endblock %}
+
+
+	{% block footer %}
+	<footer>
+	    <p>Footer</p>
+	    {% block footer_user %}
+	    {% endblock %}
+	</footer>
+	{% endblock %}
+
+
+{% endblock %}
