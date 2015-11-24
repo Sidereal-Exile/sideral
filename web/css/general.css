@@ -1,0 +1,9 @@
+/* Styles génériques à l'espace publique et au jeu */
+body {
+	background: black;
+	color: white;
+}
+
+p {
+    margin: 10px 0 10px 0;
+}

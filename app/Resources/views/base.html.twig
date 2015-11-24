@@ -4,12 +4,16 @@
         <meta charset="UTF-8" />
         <title>{% block title %}L'Exil sidéral{% endblock %}</title>
         {% block stylesheets %}
-
+            <link rel="stylesheet" type="text/css" href="{{ asset('css/reset.css') }}" />
+            <link rel="stylesheet" type="text/css" href="{{ asset('css/general.css') }}" />
+            <link rel="stylesheet" type="text/css" href="{{ asset('css/font-awesome.min.css') }}" />
         {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block javascripts %}
+            <script type="text/javascript" src="{{ asset('js/jquery-2.1.4.min.js') }}"></script>
+        {% endblock %}
     </body>
 </html>
